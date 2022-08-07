@@ -89,5 +89,3 @@ def cadmsg():
 @app.route("/quemsomos")
 def quemsomos():
     return render_template('quemsomos.html', titulo="Quem somos")
-
-app.run(debug=True)
