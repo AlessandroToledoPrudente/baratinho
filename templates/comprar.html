@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head> 
+    <title>B A R A T I N H O - {{titulo}}</title>
+    <div id="home">
+        <a href={{url_for("index")}}>Página Inicial</a>
+    </div>
+</head>
+<body>
+    <p>Nesta página serão exibidos os anúncios cadastrados na página "Vender"</p>
+    <br>
+    <p>Neste ponto, um menu semelhante ao exemplo abaixo mostrará as categorias:</p>   
+    <div id="categ">
+        <ul id="menucateg">
+            <li><a href="#">Roupas</a></li>
+            <li><a href="#">Calçados</a></li>
+            <li><a href="#">Veículos</a></li>
+            <li><a href="#">Informática</a></li>
+            <li><a href="#">Eletrônicos</a></li>
+            <li><a href="#">Serviços</a></li>
+        </ul> 
+    <p>A partir daqui serão mostrados anúncios em oferta</p>
+    <br>
+    <table border="1">
+        <tr>
+            <td>Camiseta Capitão América G - várias cores</td>
+            <td>R$ 65,00</td>
+            <td>Roupas</td>
+            <td><a href="#">Adicionar a favoritos</a></td>
+            <td><a href={{url_for("perguntar")}}>Faça uma pergunta ao vendedor</a></td>
+        </tr>
+        <tr>
+            <td>Ford Fiesta 2021 branco impecável</td>
+            <td>R$ 35.000,00</td>
+            <td>Veículos</td>
+            <td><a href="#">Adicionar a favoritos</a></td>
+            <td><a href={{url_for("perguntar")}}>Faça uma pergunta ao vendedor</a></td>
+        </tr>
+        <tr>
+            <td>Limpeza de terrenos, capinagem e jardinagem</td>
+            <td>R$ 120,00</td>
+            <td>Serviços</td>
+            <td><a href="#">Adicionar a favoritos</a></td>
+            <td><a href={{url_for("perguntar")}}>Faça uma pergunta ao vendedor</a></td>
+        </tr>
+    </table>
+       
+</div>  
+</body>
+<footer>
+    <div>
+        <p>Copyright © 2022</p>
+    </div>
+</footer>
+</html>

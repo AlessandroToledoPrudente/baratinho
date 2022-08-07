@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head> 
+    <title>B A R A T I N H O - {{titulo}}</title>
+    <div id="home">
+        <a href={{url_for("index")}}>Página Inicial</a>
+    </div>
+</head>
+<body>
+    <h1>{{titulo}}</h1>
+    <br>
+    <br>
+    <h2>As melhores ofertas e promoções estão aqui!</h2>
+    <br>
+    <table border="1">
+        <tr>
+            <td>Camiseta Capitão América G - várias cores</td>
+            <td>R$ 65,00</td>
+            <td>Roupas</td>
+            <td><a href="#">Adicionar a favoritos</a></td>
+            <td><a href={{url_for("perguntar")}}>Faça uma pergunta ao vendedor</a></td>
+        </tr>
+        <tr>
+            <td>Ford Fiesta 2021 branco impecável</td>
+            <td>R$ 35.000,00</td>
+            <td>Veículos</td>
+            <td><a href="#">Adicionar a favoritos</a></td>
+            <td><a href={{url_for("perguntar")}}>Faça uma pergunta ao vendedor</a></td>
+        </tr>
+        <tr>
+            <td>Limpeza de terrenos, capinagem e jardinagem</td>
+            <td>R$ 120,00</td>
+            <td>Serviços</td>
+            <td><a href="#">Adicionar a favoritos</a></td>
+            <td><a href={{url_for("perguntar")}}>Faça uma pergunta ao vendedor</a></td>
+        </tr>
+    </table>
+       
+</div>  
+</body>
+<footer>
+    <div>
+        <p>Copyright © 2022</p>
+    </div>
+</footer>
+</html>

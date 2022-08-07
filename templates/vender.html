@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head> 
+    <title>B A R A T I N H O - {{titulo}}</title>
+    <div id="home">
+        <a href={{url_for("index")}}>Página Inicial</a>
+    </div>
+</head>
+<body>
+    <div id="cadanuncio">
+        <h3>{{titulo}}</h3>
+        <form action="cadanuncio" method="post">
+            <p>Título:</p> 
+            <input type="text" name="titulo"><br>
+            <p>Descrição:</p>
+            <input type="text" name="descr"><br>
+            <p>Quantidade:</p>
+            <input type="test" name="qtde"><br>
+            <p>Valor:</p>
+            <input type="text" name="valor"><br>
+            <br>
+            <fieldset id="oferta">
+                <legend>Produto em oferta?</legend>
+                    <input type="radio" id="sim"> <label for="sim">Sim</label>
+                    <input type="radio" id="nao"> <label for="nap">Não</label>
+            </fieldset>
+            <br>
+            <br>
+            <input type="submit" value="Cadastrar">
+            <br>
+        </form>   
+    </div>  
+</body>
+<footer>
+    <div>
+        <p>Copyright © 2022</p>
+    </div>
+</footer>
+</html>
